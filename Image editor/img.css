@@ -1,0 +1,181 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  padding: 10px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: rgb(7, 0, 58);
+}
+.container{
+  width: 850px;
+  padding: 30px 35px 35px;
+  background: rgb(229, 229, 229);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.container.disable .editor-panel,
+.container.disable .controls .reset-filter,
+.container.disable .controls .save-img{
+  opacity: 0.5;
+  pointer-events: none;
+}
+.container h2{
+  margin-top: -8px;
+  font-size: 22px;
+  font-weight: 500;
+}
+.container .wrapper{
+  display: flex;
+  margin: 20px 0;
+  min-height: 335px;
+}
+.wrapper .editor-panel{
+  padding: 15px 20px;
+  width: 280px;
+  border-radius: 5px;
+  border: 5px solid rgb(251, 6, 137);
+}
+.editor-panel .title{
+  display: block;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.editor-panel .options, .controls{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.editor-panel button{
+  outline: none;
+  height: 40px;
+  font-size: 14px;
+  background: rgb(247, 247, 247);
+  border-radius: 3px;
+  margin-bottom: 8px;
+  border: 3px solid rgb(0, 0, 0);
+}
+.editor-panel .filter button{
+  width: calc(100% / 2 - 4px);
+}
+.editor-panel button:hover{
+  background: rgb(247, 147, 200);
+}
+.filter button.active{
+  color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
+  background: #fffefe;
+}
+.filter .slider{
+  margin-top: 12px;
+}
+.filter .slider .filter-info{
+  display: flex;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  justify-content: space-between;
+}
+.filter .slider input{
+  width: 100%;
+  height: 5px;
+  accent-color: rgb(251, 6, 137);
+}
+.editor-panel .rotate{
+  margin-top: 17px;
+}
+.editor-panel .rotate button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 4 - 3px);
+}
+.rotate .options button:nth-child(3),
+.rotate .options button:nth-child(4){
+  font-size: 18px;
+}
+.rotate .options button:active{
+  color: #fff;
+  background: #000000;
+  border-color: #000000;
+}
+.wrapper .preview-img{
+  flex-grow: 1;
+  display: flex;
+  overflow: hidden;
+  margin-left: 20px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.preview-img img{
+  max-width: 490px;
+  max-height: 335px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.controls button{
+  padding: 11px 20px;
+  font-size: 14px;
+  border-radius: 3px;
+  outline: none;
+  color: rgb(0, 0, 0);
+  border: 5px black;
+  cursor: pointer;
+  background: none;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+.controls .reset-filter{
+  color: #000000;
+  border: 1px solid #000000;
+}
+.controls .reset-filter:hover{
+  color: rgb(0, 0, 0);
+  background: rgb(247, 147, 200);
+}
+.controls .choose-img{
+  background: rgb(251, 6, 137);
+  border: 3px solid rgb(7, 0, 58);
+}
+.controls .save-img{
+  margin-left: 5px;
+  background: #5372F0;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 760px) {
+  .container{
+    padding: 25px;
+  }
+  .container .wrapper{
+    flex-wrap: wrap-reverse;
+  }
+  .wrapper .editor-panel{
+    width: 100%;
+  }
+  .wrapper .preview-img{
+    width: 100%;
+    margin: 0 0 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .controls button{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .controls .row{
+    width: 100%;
+  }
+  .controls .row .save-img{
+    margin-left: 0px;
+  }
+}
