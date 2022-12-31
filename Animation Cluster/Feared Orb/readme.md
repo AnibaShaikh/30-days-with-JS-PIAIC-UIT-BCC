@@ -1,0 +1,1 @@
+-- An animation portraying a haunted night with a ghost that is roaming in to your house on an infinte loop--
