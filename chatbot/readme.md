@@ -1,1 +1,0 @@
---An example of chatbot programmed with few interactive assetions--
