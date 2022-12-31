@@ -1,0 +1,1 @@
+--An animation analogous to snow falling with an empyreal blue sky as a backdrop--
