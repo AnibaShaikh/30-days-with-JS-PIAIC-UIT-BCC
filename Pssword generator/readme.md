@@ -1,0 +1,1 @@
+--Best for people who made lame passwords, or people who made easy to guess passwords, or for people who just don't know to write passwords or for people who are tired of generating passwords or for people who are intensely interested in securing their accounts then THIS PASSWORD GENERATOR IS BEST FOR FOR YOU--
