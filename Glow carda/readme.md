@@ -1,1 +1,1 @@
---just glow cards with an introduction to 3 silicon giants--
+--just glow cards with an introduction to 3 giants of silicon valley--
