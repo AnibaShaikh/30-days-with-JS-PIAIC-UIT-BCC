@@ -1,1 +1,1 @@
---Weather App usinh html,css and js cn search the weather of any city anywhere--
+--Weather App using html,css and js cn search the weather of any city anywhere--
