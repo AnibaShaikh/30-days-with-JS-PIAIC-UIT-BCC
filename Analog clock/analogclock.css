@@ -1,0 +1,134 @@
+.color-change-3x {
+	-webkit-animation: color-change-3x 4s linear infinite alternate both;
+	        animation: color-change-3x 4s linear infinite alternate both;
+          background-size: color-change-3x cover;
+}
+
+ @-webkit-keyframes color-change-3x {
+  0% {
+    background: #19dcea;
+  }
+  50% {
+    background: #b22cff;
+  }
+  100% {
+    background: #ea2222;
+  }
+}
+@keyframes color-change-3x {
+  0% {
+    background: #19dcea;
+  }
+  50% {
+    background: #b22cff;
+  }
+  100% {
+    background: #ea2222;
+  }
+}
+
+#clock {
+  position: relative;
+  grid-area: content;
+  width: 490px;
+  height: 490px;
+  border-radius: 50%;
+  border: double 10px #39454b;
+  background: linear-gradient(-45deg, #39454b 20%, #101017);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  margin: 10px auto;
+}
+
+.dial {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: dotted 1px #101017;
+  background: #70c6f1;
+  z-index: 1;
+}
+
+/* Clock hands */
+.hand {
+  position: absolute;
+  transform-origin: 0px center;
+  /* Fix aliasing caused by transform: rotate() */
+  outline: 1px solid transparent;
+}
+
+#hour-hand {
+  /* center hand */
+  top: calc(50% - 2px);
+  left: 51%;
+  width: 140px;
+  height: 8px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background: #b7ddf0;
+  z-index: 2;
+}
+
+#minute-hand {
+  /* center hand */
+  top: calc(50% - 2px);
+  left: 51%;
+  width: 200px;
+  height: 2px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background: #b7ddf0;
+  z-index: 3;
+}
+
+#second-hand {
+  /* center hand */
+  top: calc(50% - 1px);
+  left: 160px;
+  width: 250px;
+  height: 1px;
+  border-radius: 1px;
+  background: #ff0000;
+  transform-origin: 70px center;
+  z-index: 5;
+}
+
+/* Long form text displays */
+.display-text li {
+  list-style-type: none;
+  font-size: 32px;
+  line-height: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#time-display {
+  position: absolute;
+  top: 25%;
+  left: calc(50% - 75px);
+  min-width: 180px;
+  margin: 0;
+  text-align: center;
+  transition: 1s ease-in;
+}
+
+#time-display li {
+  display: block;
+}
+
+#calendar-display {
+  position: absolute;
+  top: 75%;
+  left: calc(50% - 75px);
+  min-width: 150px;
+  margin: 0;
+  text-align: center;
+}
+
+#calendar-display li {
+  display: inline-block;
+}
